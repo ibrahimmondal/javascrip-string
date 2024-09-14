@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <section class="flex items-center justify-center h-screen">
+    <div class="max-w-[500px] w-[400px] p-10 min-h-[400px] bg-emerald-500 rounded-lg shadow-xl text-center">
+   <h1 class="text-center font-medium text-2xl mb-4">Let's Claculate</h1>
+   <div class="flex flex-col gap-3">
+    <input type="number" placeholder="Insert value 1" class="p-3 rounded-lg" id="inpute1">
+    <input type="number" placeholder="Insert value 1" class="p-3 rounded-lg" id="inpute2">
+    <button class="bg-slate-600 p-2 rounded-lg text-white" onclick="Addition()">Addition +</button>
+    <button class="bg-slate-600 p-2 rounded-lg text-white" onclick="Subtraction()">Subtraction -</button>
+    <button class="bg-slate-600 p-2 rounded-lg text-white" onclick="Multiplication()">Multiplication *</button>
+    <button class="bg-slate-600 p-2 rounded-lg text-white" onclick="Division()">Division /</button>
+    <h2 class="font-semibold" id="results">Results: 42</h2>
+   </div>
+    </div>
+  </section>
+  <script>
+    const inpute1 = document.getElementById("inpute1");
+    const inpute2 = document.getElementById("inpute2");
+    const results = document.getElementById("results");
+
+    function Addition() {
+        if (inpute1.value === "" || inpute2.value === "") {
+            alert("please insert value");
+        } else {
+         const addition = parseInt(inpute1.value) + parseInt(inpute2.value);
+        results.innerHTML = `Results:  ${addition}`;
+        inpute1.value = "";
+        inpute2.value = "";
+        }
+    }
+    function Subtraction() {
+        if (inpute1.value === "" || inpute2.value === "") {
+            alert("please insert value");
+        } else {
+         const addition = parseInt(inpute1.value) - parseInt(inpute2.value);
+        results.innerHTML = `Results:  ${addition}`;
+        inpute1.value = "";
+        inpute2.value = "";
+        }
+    }
+    function Multiplication() {
+        if (inpute1.value === "" || inpute2.value === "") {
+            alert("please insert value");
+        } else {
+         const addition = parseInt(inpute1.value) * parseInt(inpute2.value);
+        results.innerHTML = `Results:  ${addition}`;
+        inpute1.value = "";
+        inpute2.value = "";
+        }
+    }
+    function Division() {
+        if (inpute1.value === "" || inpute2.value === "") {
+            alert("please insert value");
+        } else {
+         const addition = parseInt(inpute1.value) / parseInt(inpute2.value);
+        results.innerHTML = `Results:  ${addition}`;
+        inpute1.value = "";
+        inpute2.value = "";
+        }
+    }
+    
+    
+  </script>
+</body>
+</html>
