@@ -57,3 +57,10 @@ console.log(fruit);
 // // reverse 
 // animals.reverse();
 // console.log(animals);
+
+
+const language = ["html", "css", "javascript", "php", "tailwinecss"]
+console.log(language);
+console.log(language[2]);
+language[3] = "ibo";
+
