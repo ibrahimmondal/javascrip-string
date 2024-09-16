@@ -63,4 +63,14 @@ const language = ["html", "css", "javascript", "php", "tailwinecss"]
 console.log(language);
 console.log(language[2]);
 language[3] = "ibo";
+language[4] = "tania";
+console.log(language.toString());
+console.log(language.length);
+language.pop
 
+
+const x = [1, 2, 3, 4];
+const y = [5, 6, 7, 8];
+const p = [9, 10, 11, 12];
+const z = x.concat(y, p)
+console.log(z);
